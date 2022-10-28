@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet("/server")
+@WebServlet("/")
 public class ServerThread extends HttpServlet {
     public static final String JSON_RESPONSE_STARTING = "{\n" ;
     public static final String SLACK_USERNAME = "\"slackUsername\": " + "Reagan, ";

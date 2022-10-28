@@ -1,1 +1,1 @@
-web: java -jar target/simple-webserver.war
+web: java -war target/simple-webserver.war
