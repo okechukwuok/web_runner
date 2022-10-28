@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/classes/tasks:target/dependency/* ServerThread
+web: java $JAVA_OPTS -jar target/classes:target/dependency/* ServerThread
