@@ -75,7 +75,7 @@
             <version>3.0.4</version>
             <configuration>
               <processTypes>
-                <web>java $JAVA_OPTS -cp target/classes:target/dependency/* tasks.ServerThread</web>
+                <web>java $JAVA_OPTS -cp target/classes:target/dependency/* webapp-runner.jar</web>
               </processTypes>
             </configuration>
           </plugin>

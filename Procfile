@@ -1,2 +1,2 @@
 
-web: java $JAVA_OPTS -jar target/classes:target/dependency/* tasks.ServerThread
+web: java $JAVA_OPTS -jar target/classes:target/dependency/* webapp-runner.jar
