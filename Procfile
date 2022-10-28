@@ -1,1 +1,1 @@
-web: java -war target/simple-webserver.war
+web: java $JAVA_OPTS -war target/simple-webserver.war
