@@ -20,6 +20,9 @@ public class ServerThread extends HttpServlet {
     public static final String RESPONSE =  JSON_RESPONSE_STARTING + SLACK_USERNAME + "\"backend\": " + BACKEND +
                                             ", \"age\": " + AGE + BIO + JSON_RESPONSE_ENDING;
 
+    public ServerThread() {
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
