@@ -44,7 +44,7 @@
             <configuration>
               <archive>
                 <manifest>
-                  <mainClass>tasks.ServerThread</mainClass>
+                  <mainClass>tasks.Main</mainClass>
                 </manifest>
               </archive>
             </configuration>
