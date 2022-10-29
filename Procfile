@@ -1,1 +1,1 @@
-web: java -Dspring.profiles.active=default -Dserver.port=$PORT --war target/*.war
+web: java -jar target/simple-webserver-1.0-SNAPSHOT.war
