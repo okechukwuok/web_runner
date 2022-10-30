@@ -26,58 +26,21 @@
       <version>3.1.0</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.3.2</version>
+    </dependency>
+
+
   </dependencies>
   <build>
         <plugins>
-<!--          <plugin>-->
-<!--            <groupId>org.apache.maven.plugins</groupId>-->
-<!--            <artifactId>maven-war-plugin</artifactId>-->
-<!--            <version>3.3.2</version>-->
-<!--            <configuration>-->
-<!--              <archive>-->
-<!--                <manifest>-->
-<!--                  <mainClass>tasks.Main</mainClass>-->
-<!--                </manifest>-->
-<!--              </archive>-->
-<!--            </configuration>-->
-<!--          </plugin>-->
 
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
             <version>3.3.2</version>
-          </plugin>
-
-<!--          <plugin>-->
-<!--            <groupId>org.apache.maven.plugins</groupId>-->
-<!--            <artifactId>maven-dependency-plugin</artifactId>-->
-<!--            <version>3.1.1</version>-->
-<!--            <executions>-->
-<!--              <execution>-->
-<!--                <id>copy-dependencies</id>-->
-<!--                <phase>package</phase>-->
-<!--                <goals>-->
-<!--                  <goal>copy-dependencies</goal>-->
-<!--                </goals>-->
-<!--                <configuration>-->
-<!--                  <outputDirectory>target/dependency/</outputDirectory>-->
-<!--                  <overWriteReleases>false</overWriteReleases>-->
-<!--                  <overWriteSnapshots>false</overWriteSnapshots>-->
-<!--                  <overWriteIfNewer>true</overWriteIfNewer>-->
-<!--                </configuration>-->
-<!--              </execution>-->
-<!--            </executions>-->
-<!--          </plugin>-->
-
-          <plugin>
-            <groupId>com.heroku.sdk</groupId>
-            <artifactId>heroku-maven-plugin</artifactId>
-            <version>3.0.4</version>
-            <configuration>
-              <processTypes>
-                <web>web: java -Dspring.profiles.active=default -Dserver.port=$PORT -jar target/*.war</web>
-              </processTypes>
-            </configuration>
           </plugin>
 
           <plugin>
